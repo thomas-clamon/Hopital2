@@ -14,8 +14,8 @@ public class MedicamentEntity {
     @Column(name = "Nom")
     private String Nom;
 
-    @Column(name = "Type")
-    private String Type;
+    @Column(name = "type")
+    private String type;
 
     public Integer getID() {
         return ID;
@@ -34,10 +34,10 @@ public class MedicamentEntity {
     }
 
     public String getType() {
-        return Type;
+        return type;
     }
 
     public void setType(String type) {
-        Type = type;
+        this.type = type;
     }
 }

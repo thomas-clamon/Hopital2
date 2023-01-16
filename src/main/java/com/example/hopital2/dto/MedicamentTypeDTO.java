@@ -1,5 +1,7 @@
 package com.example.hopital2.dto;
 
+import jakarta.persistence.criteria.CriteriaBuilder;
+
 public class MedicamentTypeDTO {
 
     private Integer cachet;
@@ -7,6 +9,16 @@ public class MedicamentTypeDTO {
     private Integer piqure;
 
     private Integer pommade;
+
+    private Integer sirop;
+
+    public Integer getSirop() {
+        return sirop;
+    }
+
+    public void setSirop(Integer sirop) {
+        this.sirop = sirop;
+    }
 
     public Integer getCachet() {
         return cachet;
