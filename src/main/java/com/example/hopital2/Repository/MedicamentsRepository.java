@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface MedicamentsRepository extends JpaRepository<MedicamentEntity, Integer> {
 
-    Integer countAllByType(String type);
+
 }
