@@ -22,6 +22,19 @@ public class MedecinEntity {
     @Column(name = "date_naissance")
     private LocalDate dateNaissance;
 
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "idcabinet")
+    private CabinetEntity cabinet;
+
+
+    public CabinetEntity getCabinet() {
+        return cabinet;
+    }
+
+    public void setCabinet(CabinetEntity cabinet) {
+        this.cabinet = cabinet;
+    }
     public Integer getID() {
         return ID;
     }

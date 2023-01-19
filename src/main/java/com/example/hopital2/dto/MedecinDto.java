@@ -7,6 +7,16 @@ public class MedecinDto {
     private String display_name;
     private Integer age;
 
+    private String cabinet;
+
+    public String getCabinet() {
+        return cabinet;
+    }
+
+    public void setCabinet(String cabinet) {
+        this.cabinet = cabinet;
+    }
+
     public String getDisplay_name() {
         return display_name;
     }

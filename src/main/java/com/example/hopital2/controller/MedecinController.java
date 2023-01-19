@@ -40,6 +40,10 @@ public class MedecinController {
 
             MedecinDto dto = new MedecinDto();
             dto.setDisplay_name(medecinEntity.getPrenom() + " " + medecinEntity.getNom());
+            if (null == medecinEntity.getCabinet() )
+                dto.setCabinet("N/A");
+            else
+                dto.setCabinet(medecinEntity.getCabinet().getAdress());
 
             int Age = Period.between(medecinEntity.getDateNaissance(), LocalDate.now()).getYears();
 
